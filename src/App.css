@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,400;0,900;1,400&family=Poppins:wght@300;500;600;700&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100vw;
+    position: relative;
+    font-size: 2vh;
+}
+
+.hero_sec {
+    position: relative;
+    height: 100vh;
+
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4vmin;
+    align-items: center;
+}
+
+.logo_wrapper h1 {
+    font-family: 'Anton', sans-serif;
+    color: #FE8400;
+}
+
+.navbar_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0 3vmin;
+}
+
+.nav_links li a,
+.navBtn_wrapper a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navBtn_wrapper {
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: #FE8400;
+    margin-left: 3vmin;
+    word-spacing: 2px;
+    line-height: 2em;
+}
+
+.black_bg {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 35vw;
+    min-width: 35vw;
+    z-index: -1;
+    background-color: black;
+}
+
+.hero_img {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    width: 75vw;
+    min-width: 75vw;
+    height: 75vh;
+    border-radius: 5px;
+}
+.hero_text_wrapper{
+    color: white;
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+}
+.hero_text_wrapper h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.219178082191782vw;
+}
