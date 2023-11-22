@@ -3,7 +3,7 @@ const About = () => {
     <section>
         <div className="about_wrapper">
             <div className="about_header">
-        About
+        <p>About</p>
             </div>
             <div className="about_img_txt">
                 <img src="\src\assets\Rectangle 5.jpg" alt="orange car" className="about_car"/>
@@ -15,9 +15,9 @@ const About = () => {
                  offering competitive and transparent prices.  <br />
                  By providing services such as comprehensive  <br />insurance ......
                 </article>
-                <button className="read_me">
+                <strong className="read_me">
                     Read Me
-                </button>
+                </strong>
                 </div>
                 
             </div>
