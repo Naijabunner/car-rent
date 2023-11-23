@@ -10,13 +10,23 @@ const Ourservices = () => {
             </aside>
             <div className="ourservices_card_wrapper">
                 <div className="ourservices_card1">
-                    <h4> 24 Hours Support</h4>
-                    <p>We support you all hours of the day</p>
+                    <img src="\src\assets\refresh-right-square.png" alt="" />
+                    <h4 className="card_head"> 24 Hours Support</h4>
+                    <p className="card_text">We support you all hours of the day</p>
                 </div>
-                <div className="ourservices_card2"></div>
-                <div className="ourservices_card3"></div>
+                <div className="ourservices_card2">
+                <img src="\src\assets\medal-star.png" alt="" />
+                <h4 className="card_head"> Qualified Assurance </h4>
+                    <p className="card_text">All cars have a <br /> valid insurance</p>
+                </div>
+                <div className="ourservices_card3">
+                    <img src="\src\assets\gps.png" alt="" />
+                <h4 className="card_head">GPS on Cars</h4>
+                    <p className="card_text">All cars are equipped with <br /> GPS navigation system</p>
+                </div>
             </div>
         </div>
+        <div className="premium_blackbg"></div>
     </section>
     </> );
 }
