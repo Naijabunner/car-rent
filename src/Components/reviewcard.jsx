@@ -1,9 +1,9 @@
-const Reviewcards = () => {
+const Reviewcards = (props) => {
     return ( <>
     <div className="reviewCard_wrapper">
-        <img src="" alt="" />
-        <h4></h4>
-        <article>asdf</article>
+        <img src={props.img} alt="" />
+        <h4>{props.name}</h4>
+        <article>{props.comment}</article>
     </div>
     </> );
 }

@@ -4,7 +4,6 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    max-width: 100vw;
     position: relative;
     font-size: 2vmin;
 }
@@ -142,11 +141,14 @@ nav {
     font-family: 'poppins', sans-serif;
     width: 50vmin;
     font-size: 3vmin;
+    font-weight: bold;
 }
 /* Book now form */
+.booking_wrapper{
+    width: 100%;
+}
 .booking_form_wrapper{
     background-color: #FFE4C6;
-    width: 70vw;
     display: flex;
     padding: 2rem 2rem;
     flex-direction: column;
@@ -224,6 +226,239 @@ nav {
 .inner_carcards_wrapper img{
     max-width: 40vmin;
 }
+.carCards_wrapper{
+    border: 1px solid #dfd6d6;
+    padding: 2vmin;
+    width: fit-content;
+}
 .swiper-pagination-bullet-active {
     background-color: #FE8400 !important;
+}
+.featured_cars_header p{
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    font-weight: 500;
+    border-bottom: 2px solid #FE8400;
+}
+.featuredcars_wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 3vmin;
+    font-size: 5vmin;
+}
+.dailyrate_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.daily_rate_txt p,.daily_rate_txt h4{
+    margin: 0;
+}
+.dailyrate_wrapper button{
+    height: 5vmin;
+    background-color: #FE8400;
+    border: none;
+    border-radius: 2px;
+}
+/* swiper */
+.swiper_wrapper{
+    position: relative;
+}
+.swiperfeatures{
+    width: 70vw;
+    height: 50vh;
+}
+.swiperreview{
+    width: 90vmin;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+.review_wrapper_header{
+    display: flex;
+    justify-content: center;
+}
+.review_wrapper_header p{
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-weight: 500;
+    border-bottom: 2px solid #FE8400;
+    font-size: 5vmin;
+}
+.reviewCard_wrapper{
+    border:1px #000000;
+    padding: 5vmin;
+    display: flex;
+    height: 50vh;
+    width: 35vmin;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.reviewCard_wrapper h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 3vmin;
+}
+.reviewCard_wrapper article{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 2vmin;
+    text-align: center;
+}
+svg{
+    font-size: 10px ;
+   width: 10px;
+}
+.swiper-nav-buttons{
+    position: relative;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+
+}
+.fa-angle-right{
+     color: #FE8400;
+    font-size: 5vmin;
+    cursor:pointer ; 
+}
+.fa-angle-left{
+    color: #FE8400;
+    font-size: 5vmin;
+    cursor:pointer ; 
+}
+/* extrainfo_wrapper */
+.extrainfo_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFE4C6;
+    margin-top: 5vh;
+}
+.extrainfo_wrapper h2{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+
+}
+.extrainfo_wrapper p{
+    font-family: 'poppins', sans-serif;
+
+    margin: 0;
+
+}
+.extrainfo_wrapper div{
+    margin: 2vh 7vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contactus_header_wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 3vmin;
+    font-size: 5vmin;
+}
+.contactus_header_wrapper p{
+    width: fit-content;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    font-weight: 500;
+    border-bottom: 2px solid #FE8400;
+}
+.formImage_wrapper{
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin: auto;
+    padding: 4vmin;
+    background-color: #ffff;
+    box-shadow: -0.5px 1px 7px -1px rgb(157, 154, 154);
+
+}
+.contact_form form{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ height: 100%;
+}
+.contact_form form input{
+ height: 15%;
+ margin-bottom: 1em;
+ background-color: #f4f0f0;
+ border: none;
+ outline-color: #FE8400;
+border: 1px solid #e4e3e3;
+}
+.contact_form form textarea{
+ margin-bottom: 1em;
+ background-color: #f4f0f0;
+ border: none;
+ outline-color: #FE8400;
+ border: 1px solid #e4e3e3;
+}
+.contact_form form ::placeholder{
+    font-size: small;
+    font-family: 'Montserrat', sans-serif;
+ font-weight: 500;
+}
+.contact_form button{
+    width: 75%;
+    background-color: #FE8400;
+    border: none;
+    font-family: 'poppins', sans-serif;
+    padding: 1vmin 1vmin;
+    border-radius: 2px;
+}
+.contact_img img{
+    margin-left: 5vmin;
+    width: 40vmin;
+
+}
+.contactus_wrapper{
+    position: relative;
+    height: 70vh;
+}
+.black_bg_contactus{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 59%;
+    background-color: #000000;
+    color: #e4e3e3;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+}
+.black_bg_text{
+    display: flex;
+    align-items: center;
+    
+}
+.black_bg_text aside{
+    margin-left:4px ;
+    color: #FE8400;
+    font-family: 'poppins', sans-serif;
+
+}
+.footer_wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15vmin;
+    color: #FE8400;
+    background-color: #000000;
+    margin-top: 0.5vmin;
+    font-family: 'Anton', sans-serif;
+    font-size: 3vmin;
+}
+.fotter_social_links li{
+    display: inline-block;
+     color: #FE8400;
+    padding-left: 4vmin;
 }

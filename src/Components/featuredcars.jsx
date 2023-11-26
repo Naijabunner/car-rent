@@ -56,7 +56,7 @@ const Featuredcars = () => {
         }
 
     ]
-    const mappedCard =<Swiper
+    const mappedCard =<Swiper className="swiperfeatures"
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar, A11y]}
     spaceBetween={50}
@@ -74,6 +74,11 @@ const Featuredcars = () => {
     </Swiper>
     return (  
         <>
+        <div className="featuredcars_wrapper">
+            <div className="featured_cars_header">
+                <p>Our Featured Cars</p>
+            </div>
+        </div>
         {mappedCard}
       </>
     );

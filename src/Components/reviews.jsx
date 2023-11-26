@@ -1,6 +1,6 @@
 import Reviewcards from './reviewcard';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
+import SwiperNavButtons from './swipervav';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
@@ -11,42 +11,58 @@ const Reviews = () => {
  
     const reviewData=[
         {
-            img:"/src/assets/jeep.jpg",
-            name:"Jeep XD",
-            seatno:"5",
-            fuel:"Gasoline",
-            type:"SUV",
-            price:"200",
+            img:"/src/assets/reviewpic 02.png",
+            name:"Robert Fox",
+            comment:"I rented a car for a one week trip from Carnet on the recommendation of my  friend. Actually, I am satisfied with them.",
             id:1
         },
         {
-            img:"/src/assets/ferrari.jpg",
-            name:"Ferrari Enzo",
-            seatno:"2",
-            fuel:"Eletric",
-            type:"Sedan",
-            price:"340",
+            img:"/src/assets/reviewpic 01.png",
+            name:"Kristin watson",
+            comment:"During my last trip, I used a Carent sport car . The car was completely clean and had enough gas",
             id:2
+        },
+        {
+            img:"/src/assets/reviewpic 02.png",
+            name:"Robert Fox",
+            comment:"During my last trip, I used a Carent sport car . The car was completely clean and had enough gas",
+            id:7
+        },
+        {
+            img:"/src/assets/reviewpic 01.png",
+            name:"Kristin watson",
+            comment:"During my last trip, I used a Carent sport car . The car was completely clean and had enough gas",
+            id:4
         }
 
     ]
-    const mapreview =<Swiper
-    // install Swiper modules
-    modules={[Navigation, Pagination, Scrollbar, A11y]}
-    spaceBetween={50}
-    slidesPerView={3}
-    pagination={{ clickable: true }}
-    onSwiper={(swiper) => console.log(swiper)}
-    onSlideChange={() => console.log('slide change')}
+    const mapreview =<div className="swiper_wrapper">
+         <Swiper className='swiperreview'
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={20}
+      slidesPerView={2}
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
   >{reviewData.map((data)=>{
         return(
-            <SwiperSlide>  <Carscards key={data.id} {...data} /></SwiperSlide>
+            <SwiperSlide key={data.id}>  <Reviewcards key={data.id} {...data} /></SwiperSlide>
            
         )
     })}
+    <SwiperNavButtons/>
     </Swiper>
+    
+    </div>
+   
     return ( <>
+    <div className="review_wrapper">
+        <div className="review_wrapper_header">
+            <p>What Our Clients Say?</p>
+        </div>
     {mapreview}
+    </div>
+    
+    
     </> );
 }
  

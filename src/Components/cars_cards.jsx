@@ -9,7 +9,7 @@ const Carscards = (props) => {
                 </div>
                 <div className="dailyrate_wrapper">
                         <div className="daily_rate_txt">
-                            <p>Daily rate fromy</p>
+                            <p>Daily rate from</p>
                             <h4>{"$" + props.price}</h4>
                         </div>
                     <button>Book Now</button>
