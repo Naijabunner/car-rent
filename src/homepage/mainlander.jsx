@@ -1,6 +1,9 @@
+import Herosociallinks from "../social_links_hero";
+
 const Mainlander = () => {
     return ( <>
     <div className="black_bg"></div>
+    <Herosociallinks />
     <img src=".\src\assets\Main Picture.jpg" alt="Car" className="hero_img"/>
     <div className="hero_text_wrapper">
         <h1> Enjoy your life with <br /> our comfortable <br /> cars.</h1>

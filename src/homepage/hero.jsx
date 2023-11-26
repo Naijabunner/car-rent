@@ -6,6 +6,7 @@ const Herosection = () => {
       <div className="hero_sec">
         <Navbar />
         <Mainlander />
+        
       </div>
     </>
   );

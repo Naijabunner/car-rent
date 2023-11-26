@@ -1,12 +1,9 @@
-const Footer = () => {
-  return (
-    <>
-      <div className="footer_wrapper">
-        <div className="fotter_header">
-          <h4>CARENT</h4>
-        </div>
-        <div className="fotter_social_links">
+const Herosociallinks = () => {
+    return ( <>
+    <div className="hero_social_links">
+        
           <ul>
+            <li><div className="design_social"></div></li>
             <li>
               <i className="fa-brands fa-facebook"></i>
             </li>
@@ -22,11 +19,11 @@ const Footer = () => {
             <li>
               <i className="fa-brands fa-whatsapp"></i>
             </li>
+            <div className="design_social"></div>
           </ul>
+          
         </div>
-      </div>
-    </>
-  );
-};
-
-export default Footer;
+    </> );
+}
+ 
+export default Herosociallinks;

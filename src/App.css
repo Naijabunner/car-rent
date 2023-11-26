@@ -13,6 +13,26 @@ body {
     height: 100vh;
 
 }
+.design_social{
+    background-color: #FE8400;
+    width: 0.2vmin;
+    height: 5vmin;
+}
+.hero_social_links ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FE8400;
+    position: absolute;
+    bottom: 30%;
+    left: 1.5%;
+    font-size: 2vmin;
+}
+.hero_social_links li{
+    list-style-type: none;
+    margin: 1vmin 0;
+}
 
 /* Navbar */
 nav {
@@ -58,6 +78,11 @@ nav {
     margin-left: 3vmin;
     word-spacing: 2px;
     line-height: 2em;
+}
+.navbar_wrapper aside{
+    padding: 0 2px;
+    font-weight: bolder;
+    font-size: 15px;
 }
 
 .black_bg {
@@ -153,24 +178,40 @@ nav {
     padding: 2rem 2rem;
     flex-direction: column;
     justify-content: space-evenly;
-}
-.first_input_wrapper, .second_input_wrapper{
-    display: flex;
-    justify-content: space-evenly;
+    font-family: 'poppins', sans-serif;
     align-items: center;
-    margin-bottom: 1rem;
-    
+    font-size: 3vmin;
 }
-.pickup_location, .pickup_date, .return_date{
-    padding: 0.5rem;
+.first_input_wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 1rem;
+    align-items: center;
+    gap: 5vmin;
+}
+.second_input_wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: flex-end;
+    gap: 5vmin;
+}
+.pickup_location input, .pickup_date input, .return_date input, .return_date select {
     background-color: #ffffff;
-    
+    padding: 2vmin;
+    border: none;
+    outline-color: #FE8400;
+}
+.pickup_location , .pickup_date, .return_date , .pickup_location , .cartype, .pickup_time, .return_time {
+ display: flex;
+ flex-direction: column;
 }
 .booknow_btn button{
     background-color: #FE8400;
     border: none;
     font-family: 'poppins', sans-serif;
-    padding: 1vmin 7vmin;
+    width: 25vmin;
+    padding: 0.3rem 0rem;
+    border-radius: 2px;
 }
 /* Our service */
 .ourservices_header_wrapper p{
