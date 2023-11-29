@@ -20,7 +20,29 @@ const Booknow = () => {
         </div>
         <div className="price_summary">
             <h4>Price Summary</h4>
+            <div className="price_details">
+                <div className="car_fee_wrapper">
+                 <p>Car rental fee</p>
+            <aside> $250</aside>
+                </div>
+            <div className="discount">
+                <p>Discount</p>
+                <aside>-$140</aside>
+            </div>
+            </div>
+            <div className="total_wrapper">
+                <h5>Total Amount</h5>
+                <aside>$210</aside>
+            </div>
+            <button className="booknow">
+                Book Now
+            </button>
         </div>
+        <div className="termsAndConditions_wrapper">
+            <p>I understand & agree with the</p>
+            <aside>Terms & Conditions.</aside>
+        </div>
+        <input type="checkbox" />
     </div>
     </>);
 }
