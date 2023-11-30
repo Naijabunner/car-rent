@@ -7,7 +7,9 @@ body {
     position: relative;
     font-size: 2vmin;
 }
-
+.app{
+    position: relative;
+}
 .hero_sec {
     position: relative;
     height: 100vh;
@@ -502,4 +504,16 @@ border: 1px solid #e4e3e3;
     display: inline-block;
      color: #FE8400;
     padding-left: 4vmin;
+}
+.booknow_sec{
+    position: fixed;
+    top: 0;
+    background-color: #e4e3e390;
+    width: 100vw;
+    margin: auto;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

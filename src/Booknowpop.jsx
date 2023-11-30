@@ -1,6 +1,7 @@
 
 const Booknow = () => {
     return (  <>
+    <section className="booknow_sec">
     <div className="booknow_wrapper">
         <div className="booknow_details">
             <div className="car_details">
@@ -46,6 +47,8 @@ const Booknow = () => {
         </div>
         <input type="checkbox" />
     </div>
+    </section>
+  
     </>);
 }
  

@@ -1,3 +1,4 @@
+import Booknow from "./Booknowpop"
 import Landingpage from "./pages/landing_page"
 import React, { useReducer } from "react"
 
@@ -13,15 +14,17 @@ function App() {
   const [booked, dispatch]= useReducer(bookingReducer, initialState)
   console.log(booked)
   return (
-    <>
-    <BookingContext.Provider
+   <section className="app">
+ <BookingContext.Provider
     value= {{bookedState: booked, bookedDispatch: dispatch}}>
       <Landingpage/>
-      {booked && <div>booked</div>}
+      {booked && <Booknow/>}
     </BookingContext.Provider>
     
+   </section>
+   
 
-    </>
+  
   )
 }
 
