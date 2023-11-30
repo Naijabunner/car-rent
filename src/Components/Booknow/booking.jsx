@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { BookingContext } from "../../App";
 const Bookings = () => {
+  const bookingContext = useContext(BookingContext)
+ console.log(bookingContext)
     return (
       <>
         <section className="booking_wrapper">
@@ -44,7 +48,11 @@ const Bookings = () => {
                     </label>
                     <input type="time" /></div>
                 <div className="booknow_btn">
-                  <button>Book Now</button>
+                  <button
+                  onClick={(e)=>{
+                    e.preventDefault();
+                    console.log("clic")
+                    bookingContext.bookedDispatch(true)}}>Book Now</button>
                 </div>
               </div>
             </form>

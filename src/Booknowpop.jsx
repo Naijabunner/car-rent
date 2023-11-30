@@ -1,3 +1,4 @@
+
 const Booknow = () => {
     return (  <>
     <div className="booknow_wrapper">
@@ -34,7 +35,8 @@ const Booknow = () => {
                 <h5>Total Amount</h5>
                 <aside>$210</aside>
             </div>
-            <button className="booknow">
+            <button className="booknow"
+            >
                 Book Now
             </button>
         </div>

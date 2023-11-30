@@ -1,3 +1,5 @@
+import { useMemo } from "react";
+
 const About = () => {
     return ( <>
     <section>
@@ -26,4 +28,4 @@ const About = () => {
     </> );
 }
  
-export default About;
+export default  About;
