@@ -1,4 +1,6 @@
-import contact from "/src/assets/contactus.jpg"
+import contact from "/src/assets/contactus.jpg";
+import MainPicture from "/src/assets/MainPicture.jpg"
+
 const Contactus = () => {
   return (
     <>
@@ -23,6 +25,7 @@ const Contactus = () => {
           </div>
           <div className="contact_img">
             <img src={contact} alt="keys image" />
+            <img src={MainPicture} alt="keys image" />
           </div>
         </div>
         <div className="black_bg_contactus">
