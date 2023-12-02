@@ -534,8 +534,8 @@ border: 1px solid #e4e3e3;
         height: 5vmin;
     }
     .hero_social_links ul{
-        bottom: 25%;
-        left: 5%;
+        bottom: 35p;
+        left: 10px;
         font-size: 5vmin;
     }
 
@@ -560,7 +560,7 @@ border: 1px solid #e4e3e3;
 
     .hero_img {
         bottom: 5%;
-        height: 50vh;
+        height: 15rem;
     }
     .hero_text_wrapper{
         top: 15%;
