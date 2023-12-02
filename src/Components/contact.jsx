@@ -1,4 +1,4 @@
-import contact from "/src/assets/contactus.jpg";
+import contact from "/src/contactus.jpg";
 import MainPicture from '/src/assets/MainPicture.jpg';
 
 const Contactus = () => {
