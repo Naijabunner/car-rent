@@ -1,7 +1,8 @@
 
 
 const Carscards = (props) => {
-    console.log( props.img)
+    
+
     return (
         <div className="carCards_wrapper">
             <div className="inner_carcards_wrapper">

@@ -1,3 +1,4 @@
+import contact from "/src/assets/contactus.jpg"
 const Contactus = () => {
   return (
     <>
@@ -21,7 +22,7 @@ const Contactus = () => {
             </form>
           </div>
           <div className="contact_img">
-            <img src="\src\assets\contactus.jpg" alt="keys image" />
+            <img src={contact} alt="keys image" />
           </div>
         </div>
         <div className="black_bg_contactus">

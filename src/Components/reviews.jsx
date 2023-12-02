@@ -2,7 +2,8 @@ import Reviewcards from './reviewcard';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import SwiperNavButtons from './swipervav';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import reviewpic02 from '/src/assets/reviewpic02.png';
+import reviewpic01 from '/src/assets/reviewpic01.png';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -11,25 +12,25 @@ const Reviews = () => {
  
     const reviewData=[
         {
-            img:"/src/assets/reviewpic 02.png",
+            img: reviewpic02,
             name:"Robert Fox",
             comment:"I rented a car for a one week trip from Carnet on the recommendation of my  friend. Actually, I am satisfied with them.",
             id:1
         },
         {
-            img:"/src/assets/reviewpic 01.png",
+            img:reviewpic01,
             name:"Kristin watson",
             comment:"During my last trip, I used a Carent sport car . The car was completely clean and had enough gas",
             id:2
         },
         {
-            img:"/src/assets/reviewpic 02.png",
+            img:reviewpic02,
             name:"Robert Fox",
             comment:"During my last trip, I used a Carent sport car . The car was completely clean and had enough gas",
             id:7
         },
         {
-            img:"/src/assets/reviewpic 01.png",
+            img:reviewpic01,
             name:"Kristin watson",
             comment:"During my last trip, I used a Carent sport car . The car was completely clean and had enough gas",
             id:4

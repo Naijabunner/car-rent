@@ -2,8 +2,8 @@ import Carscards from "./cars_cards"
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import jeep from "/src/assets/jeep.jpg";
-import ferrari from "../assets/ferrari.jpg";
+import jeep from '/src/assets/jeep.jpg';
+import ferrari from "/src/assets/ferrari.jpg";
 import fiat from "/src/assets/Fiat.jpg";
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 const Featuredcars = () => {
     const featuredData=[
         {
-            img:{jeep},
+            img: jeep,
             name:"Jeep XD",
             seatno:"5",
             fuel:"Gasoline",
@@ -22,7 +22,7 @@ const Featuredcars = () => {
             id:"10"
         },
         {
-            img:"src/assets/ferrari.jpg",
+            img:ferrari,
             name:"Ferrari Enzo",
             seatno:"2",
             fuel:"Eletric",
@@ -31,7 +31,7 @@ const Featuredcars = () => {
             id:"20"
         },
         {
-            img:{fiat},
+            img:fiat,
             name:"Fiat Cope",
             seatno:"4",
             fuel:"Gasoline",
@@ -40,7 +40,7 @@ const Featuredcars = () => {
             id:"30"
         },
         {
-            img:"/src/assets/jeep.jpg",
+            img:jeep,
             name:"Jeep XD",
             seatno:"5",
             fuel:"Gasoline",
@@ -49,7 +49,7 @@ const Featuredcars = () => {
             id:"40"
         },
         {
-            img:"/src/assets/ferrari.jpg",
+            img:ferrari,
             name:"Ferrari Enzo",
             seatno:"2",
             fuel:"Eletric",
