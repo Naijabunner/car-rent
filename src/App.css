@@ -6,14 +6,16 @@ body {
     box-sizing: border-box;
     position: relative;
     font-size: 2vmin;
+    width: 100vw;
+    height: 100%;
 }
 .app{
     position: relative;
+    overflow: hidden;
 }
 .hero_sec {
     position: relative;
     height: 100vh;
-
 }
 .design_social{
     background-color: #FE8400;
@@ -39,8 +41,8 @@ body {
 /* Navbar */
 nav {
     display: flex;
-    justify-content: space-between;
-    padding: 0 4vmin;
+    justify-content: space-evenly;
+    width: 100%;
     padding-top: 2vmin;
     align-items: center;
     font-weight: bold;
@@ -49,19 +51,19 @@ nav {
 .logo_wrapper h1 {
     font-family: 'Anton', sans-serif;
     color: #FE8400;
-    margin-left: 15vmin;
+    margin-left: 15vw;
 }
 
 .navbar_wrapper {
     width: 100vmin;
      display: flex;
-    justify-content: space-between;
-    align-items: center;
+     justify-content: end;
+     align-items: center;
 }
 
 .nav_links li {
     display: inline;
-    margin: 0 5px;
+    margin-left:1vw;
     /* display: inline-block;
     padding: 0 3vmin; */
 }
@@ -77,9 +79,10 @@ nav {
     background-color: #FE8400;
     display: flex;
     justify-content: center;
-    padding: 1%;
-    width: 20vmin;
-    border-radius: 10px;
+    margin-left: 10%;
+    line-height: 3;
+    width: 16vmin;
+    border-radius: 5px;
 
     /* display: flex;
     padding: 0.5rem;
