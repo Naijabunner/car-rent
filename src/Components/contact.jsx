@@ -1,4 +1,3 @@
-import contact from "/src/contactus.jpg";
 import MainPicture from '/src/assets/MainPicture.jpg';
 
 const Contactus = () => {
@@ -24,7 +23,7 @@ const Contactus = () => {
             </form>
           </div>
           <div className="contact_img">
-            <img src={contact} alt="keys image" />
+            <img src=".\imgages\contactus.jpg" alt="keys image" />
             <img src={MainPicture} alt="keys image" />
             <p>sdfghj</p>
           </div>
