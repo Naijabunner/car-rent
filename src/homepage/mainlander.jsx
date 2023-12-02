@@ -1,5 +1,6 @@
 import Herosociallinks from "../social_links_hero";
-import MainPicture from "/src/assets/MainPicture.jpg"
+import MainPicture from "/src/assets/MainPicture.jpg";
+
 const Mainlander = () => {
     return ( <>
     <div className="black_bg"></div>
