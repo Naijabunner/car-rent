@@ -527,7 +527,7 @@ border: 1px solid #e4e3e3;
 /* For mobile devices */
 /* For mobile devices */
 /* For mobile devices */
-@media screen and (max-width: 360px){
+@media screen and (max-width: 414px){
     .design_social{
         background-color: #FE8400;
         width: 0.2vmin;
@@ -539,7 +539,7 @@ border: 1px solid #e4e3e3;
     
     }
     .hero_social_links ul{
-        bottom: 35;
+        bottom: 35vh;
         left: 10px;
         font-size: 5vmin;
     }
@@ -561,15 +561,15 @@ border: 1px solid #e4e3e3;
     .black_bg {
         width: 50vw;
         min-width: 35vw;
-        height: 90vh;
+        height: 95vh;
     }
 
     .hero_img {
-        bottom: 20vw;
+        bottom: 20vh;
         height: 15rem;
     }
     .hero_text_wrapper{
-        top: 30vw;
+        top: 15vh;
         left: 15%;
         padding: 0%;
         height: fit-content;
