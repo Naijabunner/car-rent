@@ -1,3 +1,6 @@
+import refreshrightsquare from "/src/assets/refresh-right-square.png";
+import medalstar from "/src/assets/medal-star.png";
+import gps from "/src/assets/gps.png";
 const Ourservices = () => {
     return ( <>
     <section className="ourservices_wrapper">
