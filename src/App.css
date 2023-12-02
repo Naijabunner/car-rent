@@ -535,11 +535,11 @@ border: 1px solid #e4e3e3;
     }
     .hero_sec {
         position: relative;
-        height: 90vh;
+        height: 95vh;
     
     }
     .hero_social_links ul{
-        bottom: 35p;
+        bottom: 35;
         left: 10px;
         font-size: 5vmin;
     }
@@ -565,7 +565,7 @@ border: 1px solid #e4e3e3;
     }
 
     .hero_img {
-        bottom: 10vw;
+        bottom: 20vw;
         height: 15rem;
     }
     .hero_text_wrapper{
