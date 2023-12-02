@@ -26,6 +26,7 @@ const Contactus = () => {
           <div className="contact_img">
             <img src={contact} alt="keys image" />
             <img src={MainPicture} alt="keys image" />
+            <p>sdfghj</p>
           </div>
         </div>
         <div className="black_bg_contactus">
