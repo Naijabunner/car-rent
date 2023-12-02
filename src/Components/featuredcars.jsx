@@ -84,8 +84,9 @@ const Featuredcars = () => {
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar, A11y]}
     spaceBetween={(size.width< 500)?50
-        :(size.width > 500 && size.width < 900)?200
-        :(size.width > 900)?450
+        :(size.width > 500 && size.width < 900)?150
+        :(size.width > 900 && size.width < 1154)?150
+        :(size.width > 1152 && size.width < 1948)?50
         :100}
     slidesPerView={size.width > 900 ?3:2}
     pagination={{ clickable: true }}

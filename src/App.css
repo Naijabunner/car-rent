@@ -74,7 +74,9 @@ nav {
     color: black;
     font-family: 'Poppins', sans-serif;
 }
-
+.hambuger{
+    display: none;
+}
 .navBtn_wrapper {
     background-color: #FE8400;
     display: flex;
@@ -351,7 +353,7 @@ nav {
     border:1px #000000;
     padding: 5vmin;
     display: flex;
-    height: 30vh;
+    height: 45vh;
     width: 35vmin;
     flex-direction: column;
     justify-content: center;
@@ -507,6 +509,7 @@ border: 1px solid #e4e3e3;
 
 }
 .footer_wrapper{
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 0 15vmin;
@@ -732,6 +735,14 @@ height: 50vh;
 }
 .black_bg_contactus{
     height: 50%;
+}
+.hambuger{
+    display: block;
+    position: absolute;
+    right: 10%;
+    font-size: 2rem;
+    color: #FE8400;
+
 }
 
 

@@ -30,6 +30,9 @@ const Navbar = () => {
           <p className="navBtn_wrapper_a">Sign up</p>
         </div>
       </div>
+      <div className="hambuger">
+      <i class="fa-solid fa-bars"></i>
+      </div>
     </nav>
   );
 };
