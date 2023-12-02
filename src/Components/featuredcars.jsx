@@ -73,10 +73,20 @@ const Featuredcars = () => {
     window.addEventListener("resize", reSize)
     }, [])
     console.log( size)
+    const slideModerator = (action) => {
+        if (action< 500) {
+            return 50
+        }
+    }
+
+
     const mappedCard =<Swiper className="swiperfeatures"
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar, A11y]}
-    spaceBetween={size.height > 500 ?80:30}
+    spaceBetween={(size.width< 500)?50
+        :(size.width > 500 && size.width < 900)?200
+        :(size.width > 900)?450
+        :100}
     slidesPerView={size.width > 900 ?3:2}
     pagination={{ clickable: true }}
     onSwiper={(swiper) => console.log(swiper)}

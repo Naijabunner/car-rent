@@ -80,10 +80,10 @@ nav {
     display: flex;
     justify-content: center;
     margin-left: 10%;
-    line-height: 3;
+    line-height: 1.5;
     width: 16vmin;
     border-radius: 5px;
-
+    align-items: center;
     /* display: flex;
     padding: 0.5rem;
     border-radius: 10px;
@@ -94,9 +94,13 @@ nav {
 }
 .navbar_wrapper aside{
     padding: 0 2px;
-    font-weight: bolder;
-    font-size: 15px;
+    font-weight: 800;
+    font-size: 1.5rem;
 }
+.navBtn_wrapper_a{
+    font-family: 'Poppins', sans-serif;
+}
+
 
 .black_bg {
     position: absolute;
@@ -240,7 +244,7 @@ nav {
     color: #ffffff;
     display: flex;
     margin: auto;
-    height: 70vh;
+    height: 65vh;
     flex-direction: column;
 }
 .ourservices_card_wrapper{
@@ -256,7 +260,7 @@ nav {
     text-align: center;
     height: 30vmin;
     width: 50vmin;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .ourservices_wrapper{
     position: relative;
@@ -272,7 +276,7 @@ nav {
 .premium_blackbg{
     position: absolute;
     width: 100%;
-    height: 60%;
+    height: 55%;
     top: 0;
     z-index: -1;
     background-color: #000000;
@@ -322,7 +326,7 @@ nav {
 }
 .swiperfeatures{
     width: 70vw;
-    height: 50vh;
+    height: 45vmin;
 }
 .swiperreview{
     width: 90vmin;
@@ -347,7 +351,7 @@ nav {
     border:1px #000000;
     padding: 5vmin;
     display: flex;
-    height: 50vh;
+    height: 30vh;
     width: 35vmin;
     flex-direction: column;
     justify-content: center;
@@ -482,7 +486,7 @@ border: 1px solid #e4e3e3;
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 59%;
+    height: 45%;
     background-color: #000000;
     color: #e4e3e3;
     z-index: -1;
@@ -687,7 +691,10 @@ grid-template-columns: auto auto auto;
 margin: 0 0.5rem;
 color: #000000;
 width: 20vmin;
-padding: 1rem;
+padding: 0.5rem;
+}
+.ourservices_card1 img, .ourservices_card2 img, .ourservices_card3 img{
+    width: 8em;
 }
 .premium_blackbg{
 height: 60%;
@@ -718,11 +725,10 @@ justify-content: center;
 }
 
 .reviewCard_wrapper{
-height: 30vh;
-
+height: 50vh;
 }
 .contactus_wrapper{
-    height: 40vh;
+    height: 50vh;
 }
 .black_bg_contactus{
     height: 50%;

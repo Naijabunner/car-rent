@@ -25,9 +25,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navBtn_wrapper">
-          <a href="">Login</a>
+          <p className="navBtn_wrapper_a">Login</p>
           <aside>/</aside>
-          <a href="">Sign up</a>
+          <p className="navBtn_wrapper_a">Sign up</p>
         </div>
       </div>
     </nav>
