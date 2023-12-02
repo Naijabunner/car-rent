@@ -7,6 +7,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useEffect, useState } from "react";
 const Featuredcars = () => {
     const featuredData=[
         {
@@ -56,11 +57,25 @@ const Featuredcars = () => {
         }
 
     ]
+    const[ size, newsize ]= useState({
+        width: window.innerWidth,
+        height: window.innerHeight
+    })
+    const reSize =()=>{
+        newsize({
+            width: window.innerWidth,
+        height: window.innerHeight}
+        )
+    }
+    useEffect(()=>{
+    window.addEventListener("resize", reSize)
+    }, [])
+    console.log( size)
     const mappedCard =<Swiper className="swiperfeatures"
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar, A11y]}
-    spaceBetween={50}
-    slidesPerView={3}
+    spaceBetween={size.height > 500 ?80:30}
+    slidesPerView={size.width > 900 ?3:2}
     pagination={{ clickable: true }}
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}

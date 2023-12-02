@@ -17,9 +17,9 @@ const About = () => {
                  offering competitive and transparent prices.  <br />
                  By providing services such as comprehensive  <br />insurance ......
                 </article>
-                <aside className="read_me">
+                <p className="read_me">
                     Read Me
-                </aside>
+                </p>
                 </div>
                 
             </div>
