@@ -2,7 +2,7 @@ import Carscards from "./cars_cards"
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import jeep from "/src/assets/jeep.jpg";
+// import jeep from "/src/assets/jeep.jpg";
 import ferrari from "/src/assets/ferrari.jpg";
 import fiat from "/src/assets/Fiat.jpg";
 import 'swiper/css';
@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 const Featuredcars = () => {
     const featuredData=[
         {
-            img: jeep,
+            img: ferrari,
             name:"Jeep XD",
             seatno:"5",
             fuel:"Gasoline",
@@ -40,7 +40,7 @@ const Featuredcars = () => {
             id:"30"
         },
         {
-            img:jeep,
+            img:ferrari,
             name:"Jeep XD",
             seatno:"5",
             fuel:"Gasoline",
