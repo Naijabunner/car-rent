@@ -559,11 +559,11 @@ border: 1px solid #e4e3e3;
     }
 
     .hero_img {
-        bottom: 5%;
+        bottom: 10vw;
         height: 15rem;
     }
     .hero_text_wrapper{
-        top: 15%;
+        top: 30vw;
         left: 15%;
         padding: 0%;
         height: fit-content;
