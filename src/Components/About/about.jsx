@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-
+import Rectangle5 from "/src/assets/Rectangle5.jpg"
 const About = () => {
     return ( <>
     <section>
@@ -8,7 +8,7 @@ const About = () => {
         <p>About</p>
             </div>
             <div className="about_img_txt">
-                <img src="\src\assets\Rectangle 5.jpg" alt="orange car" className="about_car"/>
+                <img src={Rectangle5} alt="orange car" className="about_car"/>
                 <div className="about_article_wrapper">
                     <article className="about_article">
                 We are a specialized team committed to <br />
