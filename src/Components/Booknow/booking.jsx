@@ -40,7 +40,7 @@ const Bookings = () => {
                     <label>
                     Pickup Time
                     </label>
-                    <input type="time" />
+                    <input type="time" onChange={(e)=>console.log(e.target.value)}/>
                 </div>
                 <div className="return_time">
                 <label>

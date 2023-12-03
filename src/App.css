@@ -9,6 +9,8 @@ body {
     width: 100vw;
     height: 100%;
 }
+
+
 /* .sidebar_wrapper{
     position: absolute;
     background-color: #232121;
@@ -415,6 +417,9 @@ nav {
     font-weight: 500;
     font-size: 3vmin;
 }
+.reviewCard_wrapper img{
+    width: 30vmin;
+}
 .reviewCard_wrapper article{
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
@@ -533,13 +538,13 @@ border: 1px solid #e4e3e3;
 }
 .contactus_wrapper{
     position: relative;
-    height: 70vh;
+    height: 70vmin;
 }
 .black_bg_contactus{
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 45%;
+    height: 45vmin;
     background-color: #000000;
     color: #e4e3e3;
     z-index: -1;
@@ -586,10 +591,91 @@ border: 1px solid #e4e3e3;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 3vmin;
+
+}
+.booknow_wrapper{
+    background-color: #FFE4C6;
+    width: 60vmin;
+    font-size: 1.5rem;
+    padding: 2vmin 3vmin;
+}
+.car_details img{
+    width: 30vmin;
+}
+.pickup_dropoff_wrapper{
+    display: flex;
+    background-color: #dfd6d6;
+    margin-top: 5px;
+    font-size: 3vmin;
+
+}
+
+.pickup_dropoff_wrapper p{
+    margin: 5px;
+    font-size: 3vmin;
+
+}
+/* .price_details{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    align-items: center;
+} */
+
+.total_wrapper,.car_fee_wrapper, .discount{
+    display: flex;
+    /* background-color: #290202; */
+    justify-content: space-between;
+    font-size: 3vmin;
+    
+    align-items: center;
+}
+.total_wrapper h5{
+    font-size: 3vmin;
+
+}
+.car_fee_wrapper h6, .discount h6{
+    margin: 0.8em;
+    font-size: 3vmin;
+}
+.car_details{
+    background-color: #ba4545;
+}
+.car_details h4{
+    margin: 0;
+    font-size: 3vmin;
+    
+}
+.price_summary h4{
+    margin:3vmin 3vmin 0;
+    font-size: 3vmin;
+
 }
 .nav_links :first-child a{
     color: #FE8400;
 }
+.termsAndConditions_wrapper{
+    display: flex;
+    justify-content: center;
+}
+.termsAndConditions_wrapper input{
+    font-size: larger;
+    width: 3vmin;
+}
+.termsAndConditions_wrapper p{
+    font-size: 2vmin;
+} 
+.booknow{
+    background-color: #FE8400;
+    border: none;
+    font-family: 'poppins', sans-serif;
+    width: 15vmin;
+    padding: 0.3rem 0rem;
+    border-radius: 2px;
+    font-size: 3vmin;
+
+    }
 
 
 /* For mobile devices */
@@ -598,7 +684,7 @@ border: 1px solid #e4e3e3;
 /* For mobile devices */
 /* For mobile devices */
 /* For mobile devices */
-@media screen and (max-width: 435px){
+@media screen and (max-width: 600px){
     .design_social{
         background-color: #FE8400;
         width: 0.2vmin;
@@ -610,10 +696,11 @@ border: 1px solid #e4e3e3;
     
     }
     .hero_social_links ul{
-        bottom: 35vh;
+        bottom: 25vh;
         left: 10px;
         font-size: 5vmin;
     }
+   
 
     /* Navbar */
 
@@ -781,13 +868,13 @@ justify-content: center;
 }
 
 .reviewCard_wrapper{
-height: 50vh;
+height: 50vmin;
 }
 .contactus_wrapper{
-    height: 50vh;
+    height: 80vmin;
 }
 .black_bg_contactus{
-    height: 50%;
+    height: 40vmin;
 }
 
 
