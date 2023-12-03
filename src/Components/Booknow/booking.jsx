@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { BookingContext } from "../../App";
 const Bookings = () => {
   const bookingContext = useContext(BookingContext)
- console.log(bookingContext)
     return (
       <>
         <section className="booking_wrapper">

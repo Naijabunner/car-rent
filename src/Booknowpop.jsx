@@ -1,9 +1,19 @@
 
 import MainPicture from "/src/assets/MainPicture.jpg"
+import { useContext } from "react";
+import { BookingContext } from "./App";
+
 const Booknow = () => {
+    const bookingContext = useContext(BookingContext)
+
     return (
       <>
         <section className="booknow_sec">
+        <div className="exit_popup">
+                  <i className="fa-solid fa-x"
+                  onClick={()=>{
+                    bookingContext.bookedDispatch(false)}}></i>
+                </div>
           <div className="booknow_wrapper">
             <div className="booknow_details">
               <div className="car_details">
