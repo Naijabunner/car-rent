@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import { navContext } from "../App";
 const Navbar = () => {
+  const NavContext= useContext(navContext)
+
   return (
     <nav>
       <div className="logo_wrapper">
@@ -31,7 +35,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="hambuger">
-      <i class="fa-solid fa-bars"></i>
+      <i className="fa-solid fa-bars" id={NavContext.navOpen && "remove_ham"} onClick={()=>NavContext.setNavOpen(true)}></i>
       </div>
     </nav>
   );

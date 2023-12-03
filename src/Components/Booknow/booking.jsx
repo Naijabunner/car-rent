@@ -10,7 +10,7 @@ const Bookings = () => {
             <p>Book Now</p>
           </div>
           <div className="booking_form_wrapper">
-            <form action="">
+            <form>
               <div className="first_input_wrapper">
                 <div className="pickup_location">
                     <label>Pick Location</label>
