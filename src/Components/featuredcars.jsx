@@ -72,12 +72,11 @@ const Featuredcars = () => {
     useEffect(()=>{
     window.addEventListener("resize", reSize)
     }, [])
-    console.log( size)
-    const slideModerator = (action) => {
-        if (action< 500) {
-            return 50
-        }
-    }
+    // const slideModerator = (action) => {
+    //     if (action< 500) {
+    //         return 50
+    //     }
+    // }
 
 
     const mappedCard =<Swiper className="swiperfeatures"
@@ -93,7 +92,6 @@ const Featuredcars = () => {
     onSwiper={(swiper) => console.log(swiper)}
     onSlideChange={() => console.log('slide change')}
   >{featuredData.map((data)=>{
-    console.log(data.id)
         return(
             <SwiperSlide key={data.id}>  <Carscards key={data.id} {...data} /></SwiperSlide>
            

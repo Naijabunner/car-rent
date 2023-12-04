@@ -35,7 +35,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="hambuger">
-      <i className="fa-solid fa-bars" id={NavContext.navOpen && "remove_ham"} onClick={()=>NavContext.setNavOpen(true)}></i>
+      <i className="fa-solid fa-bars" id={NavContext.navOpen ? "remove_ham": undefined} onClick={()=>NavContext.setNavOpen(true)}></i>
       </div>
     </nav>
   );

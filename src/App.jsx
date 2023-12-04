@@ -17,9 +17,7 @@ export const navContext = React.createContext()
 function App() {
   const [booked, dispatch]= useReducer(bookingReducer, initialState)
   const [navOpen, setNavOpen]= useState(false)
- useEffect(()=>{
-  console.log(navOpen)
- },[navOpen]) 
+
   return (
    <section className="app">
  <BookingContext.Provider
