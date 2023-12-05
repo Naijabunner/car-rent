@@ -10,6 +10,7 @@ const Booknow = () => {
     const bookingContext = useContext(BookingContext)
  /////managing booking details
  const bookingDetails = useContext(BookingDetails)
+//  all details from conttext
  const allDetails={
     location:bookingDetails.bookingDetails.location,
     PickupDate:bookingDetails.bookingDetails.PickupDate,
@@ -19,15 +20,9 @@ const Booknow = () => {
     ReturnTime:bookingDetails.bookingDetails.ReturnTime
  }
 
-const carData ={
-    mercedes:{
-        img:mercedes,
-        price:2000,
-        specialDiscount:140,
-    }
-}
 
-const handleMonthsplit=(date)=>{
+
+const handleSplit=(date)=>{
     const dateSplit = date.split('-')
     const splitMonths =  Number(dateSplit[1])
     const splitday =  Number(dateSplit[2])
@@ -35,8 +30,7 @@ const handleMonthsplit=(date)=>{
     return {splitMonths,splitday,splityear}
 }
 
-
-    const monthsName=(split)=>{
+ const monthsName=(split)=>{
          const months=split == 1? "January":
     split == 2?"Febuary":
     split == 3?"March":
@@ -53,13 +47,25 @@ const handleMonthsplit=(date)=>{
     return months
     }
    
+    const carData ={
+        mercedes:{
+            img:mercedes,
+            price:2000,
+            specialDiscount:140,
+        }
+    }
     
     
 
  
-const Pickupmonth=monthsName(handleMonthsplit(allDetails.PickupDate))
-const Returnmonth=monthsName(handleMonthsplit(allDetails.ReturnDate))
-console.log(handleMonthsplit(allDetails.PickupDate).splitMonths)
+const Pickupmonth=monthsName(handleSplit(allDetails.PickupDate).splitMonths)
+const Returnmonth=monthsName(handleSplit(allDetails.ReturnDate).splitMonths)
+const Pickupday=handleSplit(allDetails.PickupDate).splitday
+const Returnday=handleSplit(allDetails.ReturnDate).splitday
+const Pickupyear=handleSplit(allDetails.PickupDate).splityear
+const Returnyear=handleSplit(allDetails.ReturnDate).splityear
+
+console.log(handleSplit(allDetails.PickupDate).splitday)
     return (
       <>
         <section className="booknow_sec">
@@ -71,17 +77,17 @@ console.log(handleMonthsplit(allDetails.PickupDate).splitMonths)
           <div className="booknow_wrapper">
             <div className="booknow_details">
               <div className="car_details">
-                <h4>Car Name</h4>
+                <h4>{allDetails.CarType}</h4>
                 <img src={mercedes} alt="" />
                 <div className="pickup_dropoff_wrapper">
                   <div className="pickup_wrapper">
-                    <h4>PIck-up</h4>
-                    <p>{Pickupmonth} 11, 2019, 10:00AM</p>
-                    <aside>Pick-Up Location</aside>
+                    <h4>Pick-up</h4>
+                    <p>{Pickupmonth + " " +Pickupday + "," + " " + Pickupyear} , {" " +allDetails.PickupTime}</p>
+                    <aside>{allDetails.location}</aside>
                   </div>
                   <div className="dropoff_wrapper">
-                    <h4>PIck-up</h4>
-                    <p>{Returnmonth} 11, 2019, 10:00AM</p>
+                    <h4>Drop-off</h4>
+                    <p>{Returnmonth + " " +Returnday + "," + " " + Returnyear} , {" " +allDetails.ReturnTime}</p>
                   </div>
                 </div>
               </div>

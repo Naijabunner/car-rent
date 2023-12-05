@@ -39,21 +39,21 @@ const Bookings = () => {
               <div className="first_input_wrapper">
                 <div className="pickup_location">
                     <label>Pick Location</label>
-                  <input type="text" placeholder="Pick Location" name="location" onChange={handleOnchange} />
+                  <input type="text" placeholder="Pick Location" name="location"required onChange={handleOnchange} />
                 </div>
                 <div className="pickup_date">
                   <label>Pickup Date</label>
-                  <input type="date" name="PickupDate" onChange={handleOnchange}  />
+                  <input type="date" name="PickupDate" onChange={handleOnchange} required />
                 </div>
                 <div className="return_date">
                   <label>Return Date</label>
-                  <input type="date" name="ReturnDate" onChange={handleOnchange}  />
+                  <input type="date" name="ReturnDate" onChange={handleOnchange} required />
                 </div>
               </div>
               <div className="second_input_wrapper">
                 <div className="cartype">
                   <label>Car Type</label>
-                  <select name="CarType" id="cars" onChange={handleOnchange} >
+                  <select name="CarType" id="cars" onChange={handleOnchange} required>
                     <option value="">Select car</option>
                     <option value="volvo" name="CarType" >Volvo</option>
                     <option value="saab" name="CarType" >Saab</option>
@@ -65,13 +65,13 @@ const Bookings = () => {
                     <label>
                     Pickup Time
                     </label>
-                    <input type="time" name="PickupTime" onChange={handleOnchange} />
+                    <input type="time" name="PickupTime" onChange={handleOnchange} required/>
                 </div>
                 <div className="return_time">
                 <label>
                 Return Time
                     </label>
-                    <input type="time" name="ReturnTime" onChange={handleOnchange} />
+                    <input type="time" name="ReturnTime" onChange={handleOnchange} required/>
                     </div>
                 <div className="booknow_btn">
                   <button>Book Now</button>
