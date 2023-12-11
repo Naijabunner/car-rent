@@ -595,24 +595,33 @@ border: 1px solid #e4e3e3;
 
 }
 .booknow_wrapper{
-    background-color: #FFE4C6;
+    background-color: #000000;
     width: 60vmin;
     font-size: 1.5rem;
     padding: 2vmin 3vmin;
+    font-family: sans-serif;
+    color: #FE8400;
+
 }
 .car_details img{
+    margin-top: 5px;
     width: 30vmin;
 }
 .pickup_dropoff_wrapper{
     display: flex;
-    background-color: #dfd6d6;
+    background-color: #fffefe;
+    color: #4f4d4d;
+    border-radius: 5px;
+    padding: 5px;
     margin-top: 5px;
     font-size: 3vmin;
+    justify-content: space-evenly;
+    font-family: sans-serif;
 
 }
 
 .pickup_dropoff_wrapper p{
-    margin: 5px;
+    margin: 0;
     font-size: 3vmin;
 
 }
@@ -639,9 +648,7 @@ border: 1px solid #e4e3e3;
     margin: 0.8em;
     font-size: 3vmin;
 }
-.car_details{
-    background-color: #ba4545;
-}
+
 .car_details h4{
     margin: 0;
     font-size: 3vmin;

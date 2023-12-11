@@ -69,10 +69,10 @@ console.log(handleSplit(allDetails.PickupDate).splitday)
     return (
       <>
         <section className="booknow_sec">
-        <div className="exit_popup">
+        <div className="exit_popup"onClick={()=>{
+                    bookingContext.bookedDispatch(false)}}>
                   <i className="fa-solid fa-x"
-                  onClick={()=>{
-                    bookingContext.bookedDispatch(false)}}></i>
+                  ></i>
                 </div>
           <div className="booknow_wrapper">
             <div className="booknow_details">
@@ -83,7 +83,7 @@ console.log(handleSplit(allDetails.PickupDate).splitday)
                   <div className="pickup_wrapper">
                     <h4>Pick-up</h4>
                     <p>{Pickupmonth + " " +Pickupday + "," + " " + Pickupyear} , {" " +allDetails.PickupTime}</p>
-                    <aside>{allDetails.location}</aside>
+                    <aside>Location: {allDetails.location}</aside>
                   </div>
                   <div className="dropoff_wrapper">
                     <h4>Drop-off</h4>
