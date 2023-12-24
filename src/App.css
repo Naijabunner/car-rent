@@ -8,6 +8,7 @@ body {
     font-size: 2vmin;
     width: 100vw;
     height: 100%;
+    overflow: hidden;
 }
 
 
